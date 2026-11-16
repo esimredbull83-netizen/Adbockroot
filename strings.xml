@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">HostShield</string>
+
+    <!-- Navigation -->
+    <string name="nav_shield">Shield</string>
+    <string name="nav_sources">Sources</string>
+    <string name="nav_whitelist">Allow</string>
+    <string name="nav_blocklist">Block</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Root Status -->
+    <string name="root_checking_title">Checking Root Access…</string>
+    <string name="root_checking_desc">Probing su binary and Magisk systemless mounts.</string>
+    <string name="root_granted_title">Root Access Granted</string>
+    <string name="root_missing_title">Root Access Required</string>
+    <string name="root_missing_desc">HostShield requires superuser (su) permission via Magisk, KernelSU, or APatch to modify system hosts. Grant root in your manager and tap Retry.</string>
+    <string name="action_retry_root">Retry Root Check</string>
+
+    <!-- Dashboard -->
+    <string name="status_active">Protection Active</string>
+    <string name="status_inactive">Protection Disabled</string>
+    <string name="status_applying">Applying Hosts…</string>
+    <string name="label_blocked_domains">Blocked Domains</string>
+    <string name="label_last_updated">Last Updated</string>
+    <string name="label_never_updated">Never applied</string>
+    <string name="label_apply_method">Apply Method</string>
+    <string name="action_update_apply">Update &amp; Apply</string>
+    <string name="action_disable_restore">Restore / Disable</string>
+    <string name="reboot_hint_title">Reboot Recommended</string>
+    <string name="reboot_hint_desc">Magisk systemless hosts module was provisioned. If ads still appear or live bind-mount was skipped by your kernel, reboot once to mount /system/etc/hosts cleanly.</string>
+    <string name="action_reboot_now">Reboot</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="restore_confirm_title">Restore Original Hosts?</string>
+    <string name="restore_confirm_desc">This restores your backed-up /system/etc/hosts file and disables system-wide ad blocking until you apply again.</string>
+    <string name="reboot_confirm_title">Reboot Device Now?</string>
+    <string name="reboot_confirm_desc">Your device will restart to finalize the Magisk systemless hosts overlay.</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Sources -->
+    <string name="sources_title">Blocklist Sources</string>
+    <string name="sources_subtitle">Bundled baseline + remote StevenBlack &amp; hosts URLs</string>
+    <string name="action_add_source">Add Source URL</string>
+    <string name="label_source_name">Source Name</string>
+    <string name="label_source_url">Hosts File URL (https://…)</string>
+    <string name="sources_empty">No blocklist sources configured. Tap + to add a hosts URL.</string>
+
+    <!-- Whitelist & Custom Blocklist -->
+    <string name="whitelist_title">Whitelist (Allow)</string>
+    <string name="whitelist_subtitle">Domains excluded from blocking even if present in sources</string>
+    <string name="blocklist_title">Custom Blocklist</string>
+    <string name="blocklist_subtitle">Extra domains forced to 0.0.0.0 during hosts merge</string>
+    <string name="label_domain_input">Domain (e.g. ads.example.com)</string>
+    <string name="label_note_optional">Note (optional)</string>
+    <string name="label_search_domains">Search domains…</string>
+    <string name="action_add_domain">Add Domain</string>
+    <string name="whitelist_empty">No whitelisted domains yet. Add a domain if an app or link breaks under blocking.</string>
+    <string name="blocklist_empty">No custom blocked domains yet. Add specific tracker or ad hostnames here.</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Engine &amp; Sync Settings</string>
+    <string name="settings_subtitle">Configure hosts overlay strategy and WorkManager schedule</string>
+    <string name="section_apply_strategy">Apply Method</string>
+    <string name="section_dns_backup">DNS &amp; Backup</string>
+    <string name="section_auto_update">Background Auto-Update</string>
+    <string name="section_guide">Device &amp; Root Verification</string>
+</resources>
